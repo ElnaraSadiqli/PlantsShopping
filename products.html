@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap Link for Css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- FontAwesome Link for Css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Css style  link -->
+    <link rel="stylesheet" href="Sass/style.css">
+
+    <title>Products</title>
+
+    <!-- Common Header and Footer -->
+    <script src="Js/fix_header_footer.js"></script>
+
+</head>
+
+<body>
+    <!-- Header of Page -->
+    <header id="header">
+        <div class="container">
+            <!-- Header Navigation bar of Header  -->
+            <my-header></my-header>
+        </div>
+    </header>
+
+    <div class="container ">
+        <!-- Products navigation -->
+        <div id="products-content">
+            <ul class="nav products-nav-list mb-0" id="myTab" role="tablist">
+                <li class="products-nav-tt" role="presentation">
+                    <button class="active " id="all-tab" data-bs-toggle="tab" data-bs-target="#all" type="button"
+                        role="tab" aria-controls="all" aria-selected="true">All</button>
+                </li>
+                <li class="products-nav-tt" role="presentation">
+                    <button class="list-btn" id="tab" data-bs-toggle="tab" data-bs-target="#tall" type="button"
+                        role="tab" aria-controls="tall" aria-selected="false">Tall plants</button>
+                </li>
+                <li class="products-nav-tt" role="presentation">
+                    <button class="list-btn" id="mini-tab" data-bs-toggle="tab" data-bs-target="#mini" type="button"
+                        role="tab" aria-controls="mini" aria-selected="false">Mini plants</button>
+                </li>
+                <li class="products-nav-tt" role="presentation">
+                    <button class="list-btn" id="cactus-tab" data-bs-toggle="tab" data-bs-target="#cactus" type="button"
+                        role="tab" aria-controls="cactus" aria-selected="false">Cactus plants</button>
+                </li>
+            </ul>
+
+            <!-- Products images card -->
+            <div class="tab-content  products-kind" id="myTabContent">
+
+                <!-- All Plants -->
+                <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
+                    <div class="row align-items-center  justify-content-between">
+                        <!-- 1-row (product images) -->
+                        <div class="col-6 col-md-3 product-kind">
+                            <div class="product-kind-img ">
+                                <img src="Images/ProductsPage/1setir-1stun.png" alt="products-image-1ci_setir-1ci_stun">
+                            </div>
+                            <div class="product-kind-footer">
+                                <p class="p-kind-price ">Product name</p>
+                                <p class="p-kind-name">240 $</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3 product-kind">
+                            <div class="product-kind-img">
+                                <img src="Images/ProductsPage/1setir-2stun.png" alt="products-image-1ci_setir-2ci_stun">
+                            </div>
+                            <div class="product-kind-footer">
+                                <p class="p-kind-price ">Product name</p>
+                                <p class="p-kind-name">240 $</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3 product-kind">
+                            <div class="product-kind-img">
+                                <img src="Images/ProductsPage/1setir-3stun.png" alt="products-image-1ci_setir-3cu_stun">
+                            </div>
+                            <div class="product-kind-footer">
+                                <p class="p-kind-price ">Product name</p>
+                                <p class="p-kind-name">240 $</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3 product-kind">
+                            <div class="product-kind-img">
+                                <img src="Images/ProductsPage/1setir-4stun.png" alt="products-image-1ci_setir-4ci_stun">
+                            </div>
+                            <div class="product-kind-footer">
+                                <p class="p-kind-price ">Product name</p>
+                                <p class="p-kind-name">240 $</p>
+                            </div>
+                        </div>
+
+                        <!-- 2-row (product images) -->
+                        <div class="col-6 col-md-3 product-kind">
+                            <div class="product-kind-img">
+                                <img src="Images/ProductsPage/2setir-1stun.png" alt="products-image-2ci_setir-1ci_stun">
+                            </div>
+                            <div class="product-kind-footer">
+                                <p class="p-kind-price ">Product name</p>
+                                <p class="p-kind-name">240 $</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3 product-kind">
+                            <div class="product-kind-img">
+                                <img src="Images/ProductsPage/2setir-2stun.png" alt="products-image-2ci_setir-2ci_stun">
+                            </div>
+                            <div class="product-kind-footer">
+                                <p class="p-kind-price ">Product name</p>
+                                <p class="p-kind-name">240 $</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3 product-kind">
+                            <div class="product-kind-img">
+                                <img src="Images/ProductsPage/2setir-3stun.png" alt="products-image-2ci_setir-3cu_stun">
+                            </div>
+                            <div class="product-kind-footer">
+                                <p class="p-kind-price ">Product name</p>
+                                <p class="p-kind-name">240 $</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3 product-kind">
+                            <div class="product-kind-img">
+                                <img src="Images/ProductsPage/2setir-5stun.png" alt="products-image-2ci_setir-4ci_stun">
+                            </div>
+                            <div class="product-kind-footer">
+                                <p class="p-kind-price ">Product name</p>
+                                <p class="p-kind-name">240 $</p>
+                            </div>
+                        </div>
+
+                        <!-- 3-row (product images) -->
+                        <div class="col-6 col-md-3 product-kind">
+                            <div class="product-kind-img">
+                                <img src="Images/ProductsPage/1setir-1stun.png" alt="products-image-1ci_setir-1ci_stun">
+                            </div>
+                            <div class="product-kind-footer">
+                                <p class="p-kind-price ">Product name</p>
+                                <p class="p-kind-name">240 $</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3 product-kind">
+                            <div class="product-kind-img">
+                                <img src="Images/ProductsPage/1setir-2stun.png" alt="products-image-1ci_setir-2ci_stun">
+                            </div>
+                            <div class="product-kind-footer">
+                                <p class="p-kind-price ">Product name</p>
+                                <p class="p-kind-name">240 $</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3 product-kind">
+                            <div class="product-kind-img">
+                                <img src="Images/ProductsPage/1setir-3stun.png" alt="products-image-1ci_setir-3cu_stun">
+                            </div>
+                            <div class="product-kind-footer">
+                                <p class="p-kind-price ">Product name</p>
+                                <p class="p-kind-name">240 $</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3 product-kind">
+                            <div class="product-kind-img">
+                                <img src="Images/ProductsPage/1setir-4stun.png" alt="products-image-1ci_setir-4ci_stun">
+                            </div>
+                            <div class="product-kind-footer">
+                                <p class="p-kind-price ">Product name</p>
+                                <p class="p-kind-name">240 $</p>
+                            </div>
+                        </div>
+
+
+                        <!-- 4-row (product images) -->
+                        <div class="col-6 col-md-3 product-kind">
+                            <div class="product-kind-img">
+                                <img src="Images/ProductsPage/2setir-1stun.png" alt="products-image-2ci_setir-1ci_stun">
+                            </div>
+                            <div class="product-kind-footer">
+                                <p class="p-kind-price ">Product name</p>
+                                <p class="p-kind-name">240 $</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3 product-kind">
+
+                            <div class="product-kind-img">
+                                <img src="Images/ProductsPage/2setir-2stun.png" alt="products-image-2ci_setir-2ci_stun">
+                            </div>
+                            <div class="product-kind-footer">
+                                <p class="p-kind-price ">Product name</p>
+                                <p class="p-kind-name">240 $</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3 product-kind">
+                            <div class="product-kind-img">
+                                <img src="Images/ProductsPage/2setir-3stun.png" alt="products-image-2ci_setir-3cu_stun">
+                            </div>
+                            <div class="product-kind-footer">
+                                <p class="p-kind-price ">Product name</p>
+                                <p class="p-kind-name">240 $</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3 product-kind">
+                            <div class="product-kind-img">
+                                <img src="Images/ProductsPage/2setir-5stun.png" alt="products-image-2ci_setir-4ci_stun">
+                            </div>
+                            <div class="product-kind-footer">
+                                <p class="p-kind-price">Product name</p>
+                                <p class="p-kind-name">240 $</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- Tall Plants -->
+                <div class="tab-pane fade" id="tall" role="tabpanel" aria-labelledby="tall-tab">
+
+                    <div class="row align-items-center  justify-content-between">
+
+                        <!-- 1-row (product images) -->
+                        <div class="col-6 col-md-3 product-kind">
+                            <div class="product-kind-img ">
+                                <img src="Images/ProductsPage/1setir-1stun.png" alt="products-image-1ci_setir-1ci_stun">
+                            </div>
+                            <div class="product-kind-footer">
+                                <p class="p-kind-price ">Product name</p>
+                                <p class="p-kind-name">240 $</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3 product-kind">
+                            <div class="product-kind-img">
+                                <img src="Images/ProductsPage/1setir-2stun.png" alt="products-image-1ci_setir-2ci_stun">
+                            </div>
+                            <div class="product-kind-footer">
+                                <p class="p-kind-price ">Product name</p>
+                                <p class="p-kind-name">240 $</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3 product-kind">
+                            <div class="product-kind-img">
+                                <img src="Images/ProductsPage/1setir-3stun.png" alt="products-image-1ci_setir-3cu_stun">
+                            </div>
+                            <div class="product-kind-footer">
+                                <p class="p-kind-price ">Product name</p>
+                                <p class="p-kind-name">240 $</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3 product-kind">
+                            <div class="product-kind-img">
+                                <img src="Images/ProductsPage/1setir-4stun.png" alt="products-image-1ci_setir-4ci_stun">
+                            </div>
+                            <div class="product-kind-footer">
+                                <p class="p-kind-price ">Product name</p>
+                                <p class="p-kind-name">240 $</p>
+                            </div>
+                        </div>
+
+                        <!-- 2-row (product images) -->
+                        <div class="col-6 col-md-3 product-kind">
+                            <div class="product-kind-img">
+                                <img src="Images/ProductsPage/1setir-1stun.png" alt="products-image-1ci_setir-1ci_stun">
+                            </div>
+                            <div class="product-kind-footer">
+                                <p class="p-kind-price ">Product name</p>
+                                <p class="p-kind-name">240 $</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3 product-kind">
+                            <div class="product-kind-img">
+                                <img src="Images/ProductsPage/1setir-2stun.png" alt="products-image-1ci_setir-2ci_stun">
+                            </div>
+                            <div class="product-kind-footer">
+                                <p class="p-kind-price ">Product name</p>
+                                <p class="p-kind-name">240 $</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3 product-kind">
+                            <div class="product-kind-img">
+                                <img src="Images/ProductsPage/1setir-3stun.png" alt="products-image-1ci_setir-3cu_stun">
+                            </div>
+                            <div class="product-kind-footer">
+                                <p class="p-kind-price ">Product name</p>
+                                <p class="p-kind-name">240 $</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3 product-kind">
+                            <div class="product-kind-img">
+                                <img src="Images/ProductsPage/1setir-4stun.png" alt="products-image-1ci_setir-4ci_stun">
+                            </div>
+                            <div class="product-kind-footer">
+                                <p class="p-kind-price ">Product name</p>
+                                <p class="p-kind-name">240 $</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- Mini Plants -->
+                <div class="tab-pane fade" id="mini" role="tabpanel" aria-labelledby="mini-tab">
+
+                    <div class="row align-items-center  justify-content-between">
+                        <!-- 1-row (product images) -->
+                        <div class="col-6 col-md-3 product-kind">
+                            <div class="product-kind-img">
+                                <img src="Images/ProductsPage/2setir-1stun.png" alt="products-image-2ci_setir-1ci_stun">
+                            </div>
+                            <div class="product-kind-footer">
+                                <p class="p-kind-price ">Product name</p>
+                                <p class="p-kind-name">240 $</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3 product-kind">
+                            <div class="product-kind-img">
+                                <img src="Images/ProductsPage/2setir-2stun.png" alt="products-image-2ci_setir-2ci_stun">
+                            </div>
+                            <div class="product-kind-footer">
+                                <p class="p-kind-price ">Product name</p>
+                                <p class="p-kind-name">240 $</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3 product-kind">
+                            <div class="product-kind-img">
+                                <img src="Images/ProductsPage/2setir-3stun.png" alt="products-image-2ci_setir-3cu_stun">
+                            </div>
+                            <div class="product-kind-footer">
+                                <p class="p-kind-price ">Product name</p>
+                                <p class="p-kind-name">240 $</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3 product-kind">
+                            <div class="product-kind-img">
+                                <img src="Images/ProductsPage/2setir-5stun.png" alt="products-image-2ci_setir-4ci_stun">
+                            </div>
+                            <div class="product-kind-footer">
+                                <p class="p-kind-price ">Product name</p>
+                                <p class="p-kind-name">240 $</p>
+                            </div>
+                        </div>
+
+                        <!-- 2-row (product images) -->
+                        <div class="col-6 col-md-3 product-kind">
+                            <div class="product-kind-img">
+                                <img src="Images/ProductsPage/2setir-1stun.png" alt="products-image-2ci_setir-1ci_stun">
+                            </div>
+                            <div class="product-kind-footer">
+                                <p class="p-kind-price ">Product name</p>
+                                <p class="p-kind-name">240 $</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3 product-kind">
+
+                            <div class="product-kind-img">
+                                <img src="Images/ProductsPage/2setir-2stun.png" alt="products-image-2ci_setir-2ci_stun">
+                            </div>
+                            <div class="product-kind-footer">
+                                <p class="p-kind-price ">Product name</p>
+                                <p class="p-kind-name">240 $</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3 product-kind">
+                            <div class="product-kind-img">
+                                <img src="Images/ProductsPage/2setir-3stun.png" alt="products-image-2ci_setir-3cu_stun">
+                            </div>
+                            <div class="product-kind-footer">
+                                <p class="p-kind-price ">Product name</p>
+                                <p class="p-kind-name">240 $</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3 product-kind">
+                            <div class="product-kind-img">
+                                <img src="Images/ProductsPage/2setir-5stun.png" alt="products-image-2ci_setir-4ci_stun">
+                            </div>
+                            <div class="product-kind-footer">
+                                <p class="p-kind-price">Product name</p>
+                                <p class="p-kind-name">240 $</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- Cactus Plants -->
+                <div class="tab-pane fade" id="cactus" role="tabpanel" aria-labelledby="cactus-tab">
+                    <div class="row align-items-center  justify-content-between">
+                        <!-- 1-row (product images) -->
+                        <div class="col-6 col-md-3 product-kind">
+                            <div class="product-kind-img">
+                                <img src="Images/ProductsPage/2setir-2stun.png" alt="products-image-2ci_setir-2ci_stun">
+                            </div>
+                            <div class="product-kind-footer">
+                                <p class="p-kind-price ">Product name</p>
+                                <p class="p-kind-name">240 $</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3 product-kind">
+
+                            <div class="product-kind-img">
+                                <img src="Images/ProductsPage/2setir-2stun.png" alt="products-image-2ci_setir-2ci_stun">
+                            </div>
+                            <div class="product-kind-footer">
+                                <p class="p-kind-price ">Product name</p>
+                                <p class="p-kind-name">240 $</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Products images card footer -->
+            <button class="btn products-footer-btn">See More...</button>
+        </div>
+    </div>
+
+    <my-footer></my-footer>
+
+    <!-- Bootstrap Link for JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+
+    <!-- Fetch api Js -->
+    <script src="Js/script.js"></script>
+</body>
+
+</html>
