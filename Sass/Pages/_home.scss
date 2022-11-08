@@ -3,29 +3,41 @@
     background-color: $color-dark-green;
 
     // <!-- Header Navigation bar of Header  -->
-    #header-navbar {
+    #header-content {
         padding: 1.31rem 0px 1.38rem 0px;
         margin-bottom: 2px solid;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 
         // Logo Of Header
-        .header-navbar-logo {
+        .header-logo {
+            height: 100%;
             object-fit: contain;
         }
 
         //  Navigation Menu of Header 
-        .header-navbar-menu {
-            justify-content: flex-end;
+        .header-navbar {
+            .header-navbar-menu {
+                display: flex;
 
-            // Navigation menu items of Header
-            li {
-                margin-right: 2.875rem;
+                // Navigation menu items of Header
+                li {
+                    margin-right: 2.875rem;
 
-                a {
-                    font: normal 600 1.38rem/1.56rem'Yanone Kaffeesatz', sans-serif;
+                    a {
+                        font: normal 600 1.38rem/1.56rem'Yanone Kaffeesatz', sans-serif;
+                    }
                 }
             }
         }
     }
+    // Menu bar mobile
+    .menu-btn-mobile {
+        display: none;
+
+    }
+
 
     // Main Section of Header
     #header-main {
@@ -106,7 +118,6 @@
         //Header Main Section Image of Header
         .header-main-image {
             object-fit: cover;
-
         }
     }
 }
@@ -292,30 +303,31 @@
             overflow-y: visible;
 
             // Plant slider section Cards //
-            .slick-slide{
-            .plantSlider-card {
-            
-                height: 19rem;
-                width: 43rem;
-                border-radius: 2.5rem;
-                background-color: $color-somon;
-                position: relative;
-             
-                // plantSlider Cards Images
-                img {
-                    position: absolute;
-                    height: 21rem;
-                    bottom: 5px;
-                    
-    
+            .slick-slide {
+                .plantSlider-card {
+
+                    height: 19rem;
+                    width: 43rem;
+                    border-radius: 2.5rem;
+                    background-color: $color-somon;
+                    position: relative;
+
+                    // plantSlider Cards Images
+                    img {
+                        position: absolute;
+                        height: 21rem;
+                        bottom: 5px;
+
+
+                    }
+                }
+
+                .plant-card {
+                    display: flex !important;
+                    justify-content: center;
                 }
             }
-            .plant-card{
-                display: flex !important;
-                justify-content: center;
-            }
         }
-    }
     }
 
 

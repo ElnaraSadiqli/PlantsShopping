@@ -8,11 +8,7 @@
     #header-navbar {
       padding: 2px 5px;
 
-      // Basket for mobile
-      .header-basket {
-        display: flex;
-        justify-content: flex-end;
-      }
+
 
       // Menu bar button
       .menu-btn-mobile {
@@ -119,18 +115,61 @@
 
 
 /* Small devices ( phones, 600px and down) */
-@media only screen and (max-width: 600px) and (min-width: 320px) {
+@media only screen and (max-width: 600px) and (min-width: 310px) {
 
   // Font size for Small devices
   * {
-    font-size: 10px;
+    font-size: 11px;
   }
 
-  #header-navbar{
-    .header-navbar-menu {
-      display: none;
+  #header-content {
+    flex-direction: column;
+justify-content: center;
+align-items: center;
+    // Header logo
+    .header-navbar-logo {
+      width: 100%;
+      margin-bottom: 1.2rem;
+    }
+
+    // Header navbar menu
+    .header-navbar {
+      display: flex;
+      flex-direction: column;
+    margin-left: 1px;
+
+      .header-navbar-menu {
+        margin-bottom: 1rem !important;
+      }
+    }
+
+    .header-basket {
+      display: flex;
+      margin-top: 2rem;
+
+      // Basket icon
+      .header-icon-basket{
+margin-right: 1rem;
+      }
+      // Menu btn
+      .menu-btn-mobile {
+        display: flex !important;
+
+        .menu-btn {
+          width: 35px;
+         margin-left: 2rem;
+         border: 1px solid $color-wht;
+         padding: 5px;
+         border-radius: 5px;
+          background-color: $color-dark-green;
+        }
+      }
     }
   }
+
+
+
+
   // Assortments Section for Mobile
   #assortments {
 

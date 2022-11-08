@@ -4,54 +4,7 @@
 class MyHeader extends HTMLElement {
     connectedCallback() {
 
-        this.innerHTML = `  
-        <!-- Desktop NavigationBar Menu -->
-       <div id="header-navbar">
-        <div class="row align-items-center ">
-
-            <!-- Logo Of Header -->
-            <a href="index.html" class="col-4 col-md-3">
-                <img src="Images/Header/HeaderLogo.png" alt="Header Logo" class="header-navbar-logo  w-100"
-                    height="62px">
-            </a>
-
-            <!-- Navigation Menu  Desktop-->
-            <div class="col-md-7 d-md-flex ">
-                <ul class="header-navbar-menu d-flex mb-0">
-
-                    <!-- Navigation Bar  Menu-Menu -->
-                    <li class="header-navbar-item">
-                        <a href="index.html">Home</a>
-                    </li>
-                    <!-- Navigation Bar  Menu-Products -->
-                    <li class="header-navbar-item">
-                        <a href="products.html" target="_blank">Products</a>
-                    </li>
-                    <!-- Navigation Bar  Menu-About us -->
-                    <li class="header-navbar-item">
-                        <a href="about.html">About us</a>
-                    </li>
-                    <!-- Navigation Bar Menu -Contact us -->
-                    <li class="header-navbar-item">
-                        <a href="contact.html">Contact us</a>
-                    </li>
-
-                </ul>
-             </div>
-         
-            <!-- Basket Of Header -->
-            <div class="col-5 col-md-2 header-basket">
-                <button class="header-icon-basket">
-                    <img src="./Images/Header/shop icon (1).png" alt="Header shop basket icon">
-                </button>
-            </div>
-            <!--Mobile menu button-->
-            <button class="d-flex col-3 d-md-none justify-content-end menu-btn-mobile">
-            <img src="Images/Header/menu-life-btn.jpg" class="menu-btn" alt="Me4nu Btn Icon">
-            </button>
-    
-        </div>
-        </div>`
+        this.innerHTML = ``
     }
 }
 customElements.define("my-header", MyHeader);
