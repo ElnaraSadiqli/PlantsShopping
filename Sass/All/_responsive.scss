@@ -113,7 +113,6 @@
   }
 }
 
-
 /* Small devices ( phones, 600px and down) */
 @media only screen and (max-width: 600px) and (min-width: 310px) {
 
@@ -124,8 +123,10 @@
 
   #header-content {
     flex-direction: column;
-justify-content: center;
-align-items: center;
+    justify-content: center;
+    align-items: center;
+    transition: all 3s ease;
+
     // Header logo
     .header-navbar-logo {
       width: 100%;
@@ -134,41 +135,55 @@ align-items: center;
 
     // Header navbar menu
     .header-navbar {
-      display: flex;
-      flex-direction: column;
-    margin-left: 1px;
+      display: none;
+      width: 100%;
 
-      .header-navbar-menu {
-        margin-bottom: 1rem !important;
+      &.active {
+        display: flex;
+
+        .header-navbar-menu {
+          width: 100%;
+          justify-content: center;
+          transition: 3s;
+
+          .header-navbar-item {
+            margin-right: 1.2rem !important;
+
+            &:hover {
+              border: 1px solid $color-wht;
+              padding: 4px;
+            }
+          }
+        }
       }
+
+
     }
 
     .header-basket {
       display: flex;
-      margin-top: 2rem;
+      margin-top: 0.5rem;
 
       // Basket icon
-      .header-icon-basket{
-margin-right: 1rem;
+      .header-icon-basket {
+        margin-right: 1rem;
       }
+
       // Menu btn
       .menu-btn-mobile {
         display: flex !important;
 
         .menu-btn {
           width: 35px;
-         margin-left: 2rem;
-         border: 1px solid $color-wht;
-         padding: 5px;
-         border-radius: 5px;
+          margin-left: 2rem;
+          border: 1px solid $color-wht;
+          padding: 5px;
+          border-radius: 5px;
           background-color: $color-dark-green;
         }
       }
     }
   }
-
-
-
 
   // Assortments Section for Mobile
   #assortments {
