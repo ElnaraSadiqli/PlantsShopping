@@ -1,10 +1,53 @@
 
 
-
 class MyHeader extends HTMLElement {
     connectedCallback() {
 
-        this.innerHTML = ``
+        this.innerHTML = `
+        <!-- Desktop NavigationBar Menu -->
+        <div id="header-content">
+            
+            <!-- Logo Of Header -->
+            <div class="header-logo">
+                <a href="index.html">
+                    <img src="Images/Header/HeaderLogo.png" alt="Header Logo" class="header-navbar-logo  w-100"
+                        height="62px">
+                </a>
+            </div>
+            <!-- Navigation Menu  Desktop-->
+            <div class="header-navbar ">
+                <ul class=" header-navbar-menu mb-0">
+                    <!-- Navigation Bar  Menu-Menu -->
+                    <li class="header-navbar-item">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <!-- Navigation Bar  Menu-Products -->
+                    <li class="header-navbar-item">
+                        <a href="products.html" target="_blank">Products</a>
+                    </li>
+                    <!-- Navigation Bar  Menu-About us -->
+                    <li class="header-navbar-item">
+                        <a href="about.html">About us</a>
+                    </li>
+                    <!-- Navigation Bar Menu -Contact us -->
+                    <li class="header-navbar-item">
+                        <a href="contact.html">Contact us</a>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- Basket Of Header -->
+            <div class="header-basket">
+                <button class="header-icon-basket">
+                    <img src="./Images/Header/shop icon (1).png" alt="Header shop basket icon">
+                </button>
+                <!--Mobile menu button-->
+                <button class="menu-btn-mobile">
+                    <img src="Images/Header/menu.png" class="menu-btn" alt="Me4nu Btn Icon">
+                </button>
+            </div>
+        </div>
+`
     }
 }
 customElements.define("my-header", MyHeader);
